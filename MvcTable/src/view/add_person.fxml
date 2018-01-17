@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.*?>
+<?import model.Person?>
+<?import javafx.collections.*?> 
+
+
+
+
+
+<GridPane alignment="CENTER" hgap="15.0" vgap="15.0" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.FXMLDocumentController">
+    <padding>
+        <Insets bottom="45.0" left="50.0" right="20.0" top="30.0"/>
+    </padding>
+    <children>
+        <HBox alignment="TOP_RIGHT" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <children>
+                <Button  fx:id="closeBtn" onAction="#closeForm"/>
+            </children>
+        </HBox>
+    
+    <Label style="-fx-font: NORMAL 30 Tahoma;" text="Customer list" fx:id="title" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    </Label>
+    <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="1">
+     <columns>
+     <TableColumn text="Id" prefWidth="40" fx:id="PersonId">
+        <cellValueFactory><PropertyValueFactory property="id" />
+        </cellValueFactory>
+     </TableColumn>
+         <TableColumn  text="Flow Rate" prefWidth="100">
+        <cellValueFactory><PropertyValueFactory property="flowRate" />
+        </cellValueFactory>
+     </TableColumn>
+     <TableColumn text="Rate" prefWidth="60">
+        <cellValueFactory><PropertyValueFactory property="rate" />
+        </cellValueFactory>
+     </TableColumn>
+     <TableColumn text="Year" prefWidth="90">
+        <cellValueFactory><PropertyValueFactory property="duration" />
+        </cellValueFactory>
+     </TableColumn>
+     <TableColumn text="Name" prefWidth="260">
+        <cellValueFactory><PropertyValueFactory property="name" />
+        </cellValueFactory>
+     </TableColumn>
+     <TableColumn text="Address" prefWidth="340">
+        <cellValueFactory><PropertyValueFactory property="address" />
+        </cellValueFactory>
+     </TableColumn>
+</columns> 
+
+</TableView>
+
+     <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="0" 
+          GridPane.rowIndex="2">
+         <children>
+          <ComboBox  fx:id="flowRate" promptText="Flow rate" prefWidth="100"/>
+          <ComboBox fx:id="rate" promptText="Rate" prefWidth="100"/>
+          <ComboBox fx:id="duration" promptText="Contract Duration" prefWidth="150"/>
+          <TextField fx:id="name" promptText="Name" prefWidth="150"/>
+          <TextField fx:id="address" promptText="Address" prefWidth="150"/>
+          <Button mnemonicParsing="true" text="_Save" fx:id="saveBtn" onAction="#savePerson"/>
+          <Button mnemonicParsing="true" text="_Clean" fx:id="clearBtn" onAction="#clearPerson"/>
+          <Button mnemonicParsing="true" text="_Delete" fx:id="deleteBtn" onAction="#deletePerson"/>
+         </children>
+     </HBox>
+     </children>
+</GridPane>

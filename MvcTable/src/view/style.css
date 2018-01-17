@@ -1,0 +1,128 @@
+.root
+{
+    -fx-background-color:#2b91fa;
+}
+.label{
+    -fx-text-fill: #2484e6;
+}
+
+.text-field
+{
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+
+}
+#title  {
+
+    -fx-text-fill: #f2f7fd;
+}
+
+
+#flowRate .list-cell 
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: #edf0f2;
+    
+}
+
+#flowRate .list-view 
+{
+    -fx-background-color: #6eb4fc, #2b91fa;
+    -fx-effect: dropshadow( three-pass-box , #6eb4fc , 1, 0.0 , 0 , 0 );
+}    
+
+#flowRate .list-view 
+{
+    -fx-padding: 4 0 4 5;
+
+}
+
+#flowRate-popup .list-view 
+{
+    -fx-background-color: edf0f2;
+    -fx-text-fill: -fx-text-inner-color;
+}
+#rate .list-cell 
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: #edf0f2;
+    
+}
+
+#rate .list-view 
+{
+    -fx-background-color: #6eb4fc, #2b91fa;
+    -fx-effect: dropshadow( three-pass-box , #6eb4fc , 1, 0.0 , 0 , 0 );
+}    
+
+#rate .list-view 
+{
+    -fx-padding: 4 0 4 5;
+
+}
+
+#rate-popup .list-view 
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+#duration .list-cell 
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: #edf0f2;
+    
+}
+
+#duration .list-view 
+{
+    -fx-background-color: #6eb4fc, #2b91fa;
+    -fx-effect: dropshadow( three-pass-box , #6eb4fc , 1, 0.0 , 0 , 0 );
+}    
+
+#duration .list-view 
+{
+    -fx-padding: 4 0 4 5;
+
+}
+
+#duration-popup .list-view 
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+
+
+#saveBtn, #clearBtn, #deleteBtn ,#flowRate,#rate,#duration{
+    -fx-background-color: transparent;
+    -fx-border-color: #73b5fa;
+    -fx-font-veight:bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: white;
+}
+#closeBtn
+{
+    -fx-graphic:url('closeBtn.png');
+    -fx-background-color: transparent;
+    -fx-border-vidth:0.0;
+}
+#closeBtn:hover
+{
+    -fx-graphic:url('closeBtn_hover.png');
+}
+#saveBtn:hover, #clearBtn:hover {
+
+    -fx-border-color: #73b5fa;
+    -fx-text-fill: lightblue;
+
+}
+
+#saveBtn:pressed, #clearBtn:pressed{
+
+    -fx-border-color: #73b5fa;
+    -fx-background-color: #73b5fa;
+}
